@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Azure DevOps Pipeline Boost
+# Azure DevOps Custom CI Pipeline (Time Boost)
 
 ### ⚡ Intelligent Build Optimization for Legacy .NET Solutions
 
@@ -19,26 +19,6 @@
 
 </div>
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [The Problem](#-the-problem)
-- [The Solution](#-the-solution)
-- [Key Features](#-key-features)
-- [Technology Stack](#-technology-stack)
-- [Performance Comparison](#-performance-comparison)
-- [Quick Start](#-quick-start)
-- [Configuration Guide](#-configuration-guide)
-- [How It Works](#-how-it-works)
-- [Customization](#-customization)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Author](#-author)
-
----
-
 ## 🎯 Overview
 
 This PowerShell script **revolutionizes CI/CD pipelines** for large .NET solutions by implementing **intelligent selective building**. Instead of rebuilding hundreds of projects for a single file change, it analyzes Git diff and builds only affected projects.
@@ -48,8 +28,6 @@ Perfect for:
 - 🔧 **Teams without Docker** or modern containerization
 - ⏰ **Projects with 20+ minute build times**
 - 💰 **Organizations with limited CI/CD budget**
-
----
 
 ## 😫 The Problem
 
@@ -69,8 +47,6 @@ Perfect for:
 ```
 ☝️ Rebuilds EVERYTHING, even if you changed one CSS file!
 
----
-
 ## ✅ The Solution
 
 ### Smart Selective Building
@@ -89,8 +65,6 @@ graph LR
 ```
 ☝️ Builds only changed projects + their dependencies!
 
----
-
 ## 🌟 Key Features
 
 | Feature | Description |
@@ -102,8 +76,6 @@ graph LR
 | 📊 **Frontend Detection** | Separate tracking for frontend changes |
 | ⚙️ **Customizable** | Adapt to your project structure |
 | 📈 **Pipeline Variables** | Sets Azure DevOps variables for next steps |
-
----
 
 ## 🛠️ Technology Stack
 
@@ -117,8 +89,6 @@ graph LR
 | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | Version Control | [Learn More](https://git-scm.com/) |
 
 </div>
-
----
 
 ## 📊 Performance Comparison
 
@@ -156,8 +126,6 @@ graph LR
 ### 🎉 **Result: ~20 minutes saved per build!**
 
 </div>
-
----
 
 ## 🚀 Quick Start
 
@@ -199,8 +167,6 @@ graph LR
        solution: '$(projects)'
    ```
 
----
-
 ## ⚙️ Configuration Guide
 
 ### Step 1: PowerShell Task Configuration
@@ -237,8 +203,6 @@ graph LR
 </Project>
 ```
 
----
-
 ## 🔍 How It Works
 
 ```powershell
@@ -262,8 +226,6 @@ isBuildable = true
 # 5️⃣ MSBuild uses variables
 <MSBuild Projects="$(projects)" />
 ```
-
----
 
 ## 🎨 Customization
 
@@ -298,8 +260,6 @@ if ($element.Contains("/API/")) {
 }
 ```
 
----
-
 ## 📚 Documentation
 
 ### Script Parameters
@@ -320,8 +280,6 @@ variables:
   isBuildable: 'true'
 ```
 
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how:
@@ -332,8 +290,6 @@ Contributions are welcome! Here's how:
 4. 📤 Push to branch (`git push origin feature/AmazingFeature`)
 5. 🔀 Open Pull Request
 
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -342,22 +298,15 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 MIT License - Copyright (c) 2025 Damian Czerwiński
 ```
 
----
-
 ## 👨‍💻 Author
 
 <div align="center">
 
 ### Damian Czerwiński
 
-[![GitHub](https://img.shields.io/badge/GitHub-damianczer-181717?style=for-the-badge&logo=github)](https://github.com/damianczer/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/damian-czerwinski)
-
 **If this project helped you, please ⭐ star this repository!**
 
 </div>
-
----
 
 <div align="center">
 
