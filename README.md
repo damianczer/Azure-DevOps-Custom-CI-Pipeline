@@ -11,12 +11,6 @@
 
 **Build only what changed, not the entire solution!**
 
-[Features](#-key-features) •
-[Problem](#-the-problem) •
-[Solution](#-the-solution) •
-[Setup](#-quick-start) •
-[Documentation](#-documentation)
-
 </div>
 
 ## 🎯 Overview
@@ -280,39 +274,15 @@ variables:
   isBuildable: 'true'
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. 🍴 Fork the repository
-2. 🌿 Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. 📤 Push to branch (`git push origin feature/AmazingFeature`)
-5. 🔀 Open Pull Request
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License - Copyright (c) 2025 Damian Czerwiński
-```
-
 ## 👨‍💻 Author
 
 <div align="center">
 
 ### Damian Czerwiński
 
-**If this project helped you, please ⭐ star this repository!**
-
 </div>
 
 <div align="center">
-
-### 💡 Questions or Issues?
-
-[Open an Issue](https://github.com/damianczer/azure-devops-msbuild-auto/issues) • [Discussions](https://github.com/damianczer/azure-devops-msbuild-auto/discussions)
 
 **Made with ❤️ for the .NET Community**
 
