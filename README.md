@@ -1,29 +1,34 @@
 <div align="center">
 
-# Azure DevOps Custom CI Pipeline (Time Boost)
+# Azure DevOps Custom CI Pipeline
 
-### ⚡ Intelligent Build Optimization for Legacy .NET Solutions
+*Inteligent build optimization for legacy .NET solutions*
 
 [![GitHub stars](https://img.shields.io/github/stars/damianczer/azure-devops-msbuild-auto?style=for-the-badge&logo=github)](https://github.com/damianczer/azure-devops-msbuild-auto/stargazers)
 [![GitHub watchers](https://img.shields.io/github/watchers/damianczer/azure-devops-msbuild-auto?style=for-the-badge&logo=github)](https://github.com/damianczer/azure-devops-msbuild-auto/watchers)
 [![GitHub issues](https://img.shields.io/github/issues/damianczer/azure-devops-msbuild-auto?style=for-the-badge&logo=github)](https://github.com/damianczer/azure-devops-msbuild-auto/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
+| Technology | Purpose | Documentation |
+|------------|---------|---------------|
+| ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white) | Script Engine | [Learn More](https://learn.microsoft.com/en-us/powershell/) |
+| ![MSBuild](https://img.shields.io/badge/MSBuild-512BD4?style=for-the-badge&logo=.net&logoColor=white) | Build System | [Learn More](https://learn.microsoft.com/en-us/visualstudio/msbuild/?view=vs-2022) |
+| ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white) | CI/CD Platform | [Learn More](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | Version Control | [Learn More](https://git-scm.com/) |
+
 **Build only what changed, not the entire solution!**
 
 </div>
 
-## 🎯 Overview
-
 This PowerShell script **revolutionizes CI/CD pipelines** for large .NET solutions by implementing **intelligent selective building**. Instead of rebuilding hundreds of projects for a single file change, it analyzes Git diff and builds only affected projects.
 
 Perfect for:
-- 🏢 **Enterprise legacy applications** with 100+ projects
-- 🔧 **Teams without Docker** or modern containerization
-- ⏰ **Projects with 20+ minute build times**
-- 💰 **Organizations with limited CI/CD budget**
+- **Enterprise legacy applications** with 100+ projects
+- **Teams without Docker** or modern containerization
+- **Projects with 20+ minute build times**
+- **Organizations with limited CI/CD budget**
 
-## 😫 The Problem
+## The Problem:
 
 ### Does this sound familiar?
 
@@ -39,9 +44,9 @@ Perfect for:
 ```xml
 <MSBuild Projects="EntireSolution.sln" />
 ```
-☝️ Rebuilds EVERYTHING, even if you changed one CSS file!
+Rebuilds EVERYTHING, even if you changed one CSS file!
 
-## ✅ The Solution
+## The Solution:
 
 ### Smart Selective Building
 
@@ -57,34 +62,9 @@ graph LR
 ```xml
 <MSBuild Projects="$(projects)" />
 ```
-☝️ Builds only changed projects + their dependencies!
+Builds only changed projects + their dependencies!
 
-## 🌟 Key Features
-
-| Feature | Description |
-|---------|-------------|
-| 🎯 **Selective Building** | Analyzes Git changes and builds only affected projects |
-| 🔍 **Dependency Tracking** | Automatically includes referenced projects |
-| 🌿 **Branch Comparison** | Compares feature branches against master/develop |
-| 🔄 **PR Support** | Native Azure DevOps Pull Request integration |
-| 📊 **Frontend Detection** | Separate tracking for frontend changes |
-| ⚙️ **Customizable** | Adapt to your project structure |
-| 📈 **Pipeline Variables** | Sets Azure DevOps variables for next steps |
-
-## 🛠️ Technology Stack
-
-<div align="center">
-
-| Technology | Purpose | Documentation |
-|------------|---------|---------------|
-| ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white) | Script Engine | [Learn More](https://learn.microsoft.com/en-us/powershell/) |
-| ![MSBuild](https://img.shields.io/badge/MSBuild-512BD4?style=for-the-badge&logo=.net&logoColor=white) | Build System | [Learn More](https://learn.microsoft.com/en-us/visualstudio/msbuild/?view=vs-2022) |
-| ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white) | CI/CD Platform | [Learn More](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops) |
-| ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | Version Control | [Learn More](https://git-scm.com/) |
-
-</div>
-
-## 📊 Performance Comparison
+## Performance Comparison:
 
 ### Before vs After
 
@@ -96,9 +76,9 @@ graph LR
 ![Before](https://github.com/user-attachments/assets/8f72e8f9-7fcf-4d71-9df4-f183edb814d9)
 
 **Full solution build**
-- ⏱️ **~25 minutes**
-- 🔨 **150 projects rebuilt**
-- 💸 **High Azure costs**
+- **~25 minutes**
+- **150 projects rebuilt**
+- **High Azure costs**
 
 </td>
 <td width="50%">
@@ -107,9 +87,9 @@ graph LR
 ![After](https://github.com/user-attachments/assets/5e4e6e01-9a2e-46bd-8d34-cfdec00700ec)
 
 **Only changed projects**
-- ⚡ **~5 minutes**
-- 🎯 **3-5 projects rebuilt**
-- 💰 **80% cost reduction**
+- **~5 minutes**
+- **3-5 projects rebuilt**
+- **80% cost reduction**
 
 </td>
 </tr>
@@ -117,11 +97,11 @@ graph LR
 
 <div align="center">
 
-### 🎉 **Result: ~20 minutes saved per build!**
+### **Result: ~20 minutes saved per build!**
 
 </div>
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -161,7 +141,7 @@ graph LR
        solution: '$(projects)'
    ```
 
-## ⚙️ Configuration Guide
+## Configuration Guide
 
 ### Step 1: PowerShell Task Configuration
 
@@ -197,7 +177,7 @@ graph LR
 </Project>
 ```
 
-## 🔍 How It Works
+## How it works:
 
 ```powershell
 # 1️⃣ Compare branches
@@ -221,41 +201,6 @@ isBuildable = true
 <MSBuild Projects="$(projects)" />
 ```
 
-## 🎨 Customization
-
-### Adapt to Your Project Structure
-
-The script looks for `/code` directory by default. Modify for your structure:
-
-```powershell
-# Current structure: src/Feature/FeatureName/code/
-if ($element.Contains("/code")) {
-    # Extract project path
-}
-
-# Your structure: src/Modules/ModuleName/
-if ($element.Contains("/Modules/")) {
-    $index = $element.IndexOf("/Modules/")
-    # Custom logic
-}
-```
-
-### Add Custom Patterns
-
-```powershell
-# Track database changes
-if ($element.Contains("/Database/")) {
-    $hasDatabaseChanged = $true
-}
-
-# Track API changes
-if ($element.Contains("/API/")) {
-    $hasAPIChanged = $true
-}
-```
-
-## 📚 Documentation
-
 ### Script Parameters
 
 | Parameter | Required | Description | Example |
@@ -273,12 +218,9 @@ variables:
   hasFrontendChanged: 'true'
   isBuildable: 'true'
 ```
-
-## 👨‍💻 Author
-
 <div align="center">
 
-### Damian Czerwiński
+### Author: Damian Czerwiński
 
 </div>
 
